@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="ParallelSuite" parallel="tests" thread-count="3">
+    <listeners>
+        <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener"/>
+    </listeners>
+    <test name="ChromeTest">
+        <classes>
+            <class name="org.selenium.grid.GoogleTest"/>
+        </classes>
+    </test>
+
+    <test name="FirefoxTest">
+        <classes>
+            <class name="org.selenium.grid.BingTest"/>
+        </classes>
+    </test>
+
+    <test name="EdgeTest">
+        <classes>
+            <class name="org.selenium.grid.WikipediaTest"/>
+        </classes>
+    </test>
+</suite>
+
+
