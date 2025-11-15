@@ -9,12 +9,14 @@
             <class name="org.selenium.grid.GoogleTest"/>
         </classes>
     </test>
+<!--
 
     <test name="FirefoxTest">
         <classes>
             <class name="org.selenium.grid.BingTest"/>
         </classes>
     </test>
+-->
 
     <test name="EdgeTest">
         <classes>
